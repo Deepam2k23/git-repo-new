@@ -1,0 +1,8 @@
+search for lambda function > click on create function > give function name (unique name) >
+choose Runtime Python 3.14 > create function > copy code in (https://github.com/newdelthis/demo/blob/main/sales_total_function_lambda.py) 
+& paste it on code editor and click on Deploy > click on Configuration > click on link below "Role name" >
+In permission section Add permission > Attach policies > search & click on "AmazonS3fullAccess" > Add permission > 
+Now create S3 bucket > give name > untick "Block all public access" > tick "I acknowledge" > create bucket >
+click on Properties > scroll down and search event notification and click on create on event > give event name >
+tick "All object create events" in event type > scroll down and choose lambda function (choose lambda func. which you created in the begining) >
+scroll up & click on "Objects" > upload file (sales.csv) > scroll down & upload > close > refresh 
